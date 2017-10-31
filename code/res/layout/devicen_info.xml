@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray" >
+
+    <TextView
+        android:id="@+id/tvnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvname"
+        android:layout_below="@+id/tvname"
+        android:layout_marginTop="22dp"
+        android:paddingBottom="25dp"
+        android:fontFamily="sans-serif"
+        android:text="Device Number"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/device_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvnumber"
+        android:layout_alignBottom="@+id/tvnumber"
+        android:layout_alignLeft="@+id/device_name"
+        android:fontFamily="sans-serif"
+        android:text="number"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/blue" />
+
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="34dp"
+        android:fontFamily="sans-serif"
+        android:text="Device Name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/device_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvnumber"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/tvnumber"
+        android:fontFamily="sans-serif"
+        android:text="name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/blue" />
+
+</RelativeLayout>
